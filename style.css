@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
     border-top: 5px #5fcd70 solid;
@@ -9,7 +10,7 @@ body{
                          'article'
                          'section'
                          'footer';
-    grid-template-rows: 78vh 35vh 40vh 50vh 10vh;
+    grid-template-rows: 78vh 40vh 50vh 50vh 10vh;
 }
 header{
     grid-area: header;
@@ -19,18 +20,7 @@ header{
     background-image: url(img/banner.png);
     background-size: cover;
 }
-.div-mao{
-    width: 40%;
-    height: 100%;
-    margin-right: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.div-mao img{
-    width: 68%;
-}
-.div-textos{
+.div-texto{
     width: 40%;
     height: 100%;
     margin-left: 175px;
@@ -77,6 +67,17 @@ header{
 .div-textos div div:hover{
     background-color: #5fcd70;
 }
+.div-mao{
+    width: 40%;
+    height: 100%;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.div-mao img{
+    width: 68%;
+}
 nav{
     grid-area: nav;
     background-color: white;
@@ -85,13 +86,11 @@ nav{
     justify-content: space-around;
 }
 nav div{
-
     text-align: center;
 }
 .div-pre-ico{
     width: 400px;
     height: 100px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,12 +116,74 @@ nav div p{
 article{
     grid-area: article;
     background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#div-form h1{
+    margin-top: 0;
+    font-size: 18pt;
+    font-weight: 500;
+}
+#div-form p{
+    font-size: 12pt;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.600);
+}
+#div-form input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.500);
+}
+#div-form button{
+    width: 80px;
+    height: 32px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #5fcd70;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12pt;
+    font-weight: 900;
+    color: white;
 }
 section{
     grid-area: section;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section p{
+    margin-top: 0;
+    font-size: 12pt;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.500);
+}
+section h1{
+    font-size: 14pt;
+}
+.p2{
+    font-size: 10pt;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.500);
 }
 footer{
     grid-area: footer;
     background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer div a{
+    margin: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.300);
 }
