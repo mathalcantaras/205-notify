@@ -20,7 +20,7 @@ header{
     background-image: url(img/banner.png);
     background-size: cover;
 }
-.div-texto{
+.div-textos{
     width: 40%;
     height: 100%;
     margin-left: 175px;
@@ -43,7 +43,7 @@ header{
     font-size: 18pt;
     color: white;  
 }
-.div-textos div{
+#container-ico{
     width: 150px;
     height: 50px;
     display: flex;
@@ -51,7 +51,7 @@ header{
     justify-content: space-around;
     margin-top: 10px;
 }
-.div-textos div div{
+#ico{
     width: 40px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.400);
@@ -61,10 +61,10 @@ header{
     justify-content: center;
     cursor: pointer;
 }
-.div-textos div div img{
-    width: 25px;
+#ico img{
+    width: 20px;
 }
-.div-textos div div:hover{
+#ico:hover{
     background-color: #5fcd70;
 }
 .div-mao{
@@ -174,6 +174,29 @@ section h1{
     font-size: 10pt;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.500);
+}
+#container-ico2{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#ico2{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.200);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#ico2 img{
+    width: 20px;
+}
+#ico2:hover{
+    background-color: #5fcd70;
 }
 footer{
     grid-area: footer;
