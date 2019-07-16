@@ -150,6 +150,10 @@ article{
     font-size: 12pt;
     font-weight: 900;
     color: white;
+    cursor: pointer;
+}
+#div-img-video{
+    cursor: pointer;
 }
 section{
     grid-area: section;
@@ -176,15 +180,15 @@ section h1{
     color: rgba(0, 0, 0, 0.500);
 }
 #container-ico2{
-    width: 300px;
+    width: 220px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 #ico2{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(0, 0, 0, 0.200);
     border-radius: 100%;
     display: flex;
@@ -193,7 +197,8 @@ section h1{
     cursor: pointer;
 }
 #ico2 img{
-    width: 20px;
+    width: 15px;
+    color: black;
 }
 #ico2:hover{
     background-color: #5fcd70;
@@ -209,4 +214,8 @@ footer div a{
     margin: 10px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.300);
+    cursor: pointer;
+}
+footer div a:hover{
+    color: black;
 }
